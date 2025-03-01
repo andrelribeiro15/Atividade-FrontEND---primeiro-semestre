@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo.css" type="text/css"/>
+    <script src="javas.js"></script>
+    <title>Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body id="paginas-principais" >
+
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark p-4">
+          <h5 class="text-body-emphasis h4">Páginas</h5>
+          <span class="text-body-secondary"><a href="index.html"><div class="opcao">Inicio</div></a>
+            <a href="conteudo.html"><div class="opcao">Mamíferos</div></a>
+            <a href="conteudo2.html"><div class="opcao">Aves</div></a>
+            <a href="login.html"><div class="opcao">Login</div></a></span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+
+      <body id="pagina" >
+
+        <div class="container-formulario">
+            <h2>Inscrição para Ongs</h2>
+            <h3>Preencha este formulário para se juntar a nossas causas</h3>
+            <form name="formInscrever" method="post" action="#" onsubmit="return validaInscricao()">
+                <fieldset class="inscrever1">
+                    <legend>Dados Pessoais</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="txtnome">
+                    </div>
+                    <div class="form-group">
+                        <label for="fone">Telefone:</label>
+                        <input type="text" class="form-control" id="fone" name="txtfone">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="txtemail" placeholder="exemplo@gmail.com">
+                    </div>
+                </fieldset>
+    
+                <fieldset class="inscrever1">
+                    <legend>Ongs Disponíveis</legend>
+                    <div class="form-group">
+                        <label for="favorito">Selecione sua Ong preferida:</label>
+                        <select class="form-control" id="favorito" name="selfavorito">
+                            <option value="">Escolha</option>
+                            <option value="Suipa">Suipa</option>
+                            <option value="Ampara">Ampara Animal</option>
+                            <option value="Upas">Upas</option>
+                            <option value="ProAnima">ProAnima</option>
+                            <option value="Aspaan">Aspaan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="texto">Porque ama os animais ?</label>
+                        <textarea class="form-control" id="tx" name="texto" placeholder="Informe pelo menos 15 caracteres"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="reset" class="btn btn-secondary">Limpar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
